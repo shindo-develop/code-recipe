@@ -1,12 +1,10 @@
-// パスワード入力欄を取得
-const passwordClick = document.getElementById('passwordClick');
 // パスワードを表示、非表示を切り替えるチェックボックスを取得
 const checkBox = document.getElementById('passwordClickCheck');
 
-//
-const passwordToggle = (ele) => {
-    // nodeのtype属性を取得し、書き換える
-    ele.type = 'text';
+function passwordToggle(){
+    // パスワード入力欄を取得
+    const pass = document.getElementById("passwordClick");
+    pass.type = pass.type === "password" ? "text" : "password";
 };
 
 // addEventListenerの第二引数は関数の形で渡してあげること
