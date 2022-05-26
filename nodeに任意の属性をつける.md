@@ -9,3 +9,8 @@ const div = document.getElementById('div');
 // element.getAttribute('data-secret');で受け取る
 div.getAttribute('data-secret');
 ```
+
+## JavaScript上で設定するには
+```js
+main.setAttribute("data-index", "0");
+```
